@@ -11,13 +11,6 @@ class AdminAdd extends Component {
             username: '',
             password: '',
         }
-        this.handleChange = this.handleChange.bind(this)
-    }
-
-    handleChange(e) {
-        this.setState({
-            file: e.target.files[0]
-        });
     }
 
     onChangeUsername(e) {
@@ -30,10 +23,9 @@ class AdminAdd extends Component {
             password: e.target.value
         })
     }
-  
+
     onSubmit(e) {
         e.preventDefault();
-        
         const obj = {
             token: localStorage.getItem('a'),
             username: this.state.username,
@@ -44,7 +36,7 @@ class AdminAdd extends Component {
 
         this.setState({
             username: '',
-            password:'',
+            password: '',
         })
     }
 
@@ -90,7 +82,7 @@ class AdminAdd extends Component {
                                 name="password"
                             />
                         </div>
-                        
+
                         <button type="submit" onClick={onsubmit} className="btn btn-success"> submit</button>
                         <a className="btn btn-secondary" href="http://localhost:3000/admin">Back</a>
                     </form>

@@ -83,7 +83,7 @@ class AdminManage extends Component {
                                         {persons.username}
                                     </td>
                                     <td>
-
+                                        <LinkContainer to={`/admin-edit/${persons.id}`} className="btn btn-success"><p>Update</p></LinkContainer><br></br>
                                         <button className="btn btn-danger" onClick={() => { if (window.confirm('Apakah kamu yakin Delete?')) this.onDelete(persons.id) }}>Delete</button>
                                     </td>
 

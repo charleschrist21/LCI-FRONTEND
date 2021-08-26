@@ -98,7 +98,7 @@ class JurnalManage extends Component {
                                         {persons.file}
                                     </td>
                                     <td>
-
+                                        <LinkContainer to={`/jurnal-edit/${persons.id}`} className="btn btn-success"><p>Update</p></LinkContainer><br></br>
                                         <button className="btn btn-danger" onClick={() => { if (window.confirm('Apakah kamu yakin Delete?')) this.onDelete(persons.id) }}>Delete</button>
                                     </td>
 

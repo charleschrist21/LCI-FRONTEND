@@ -6,6 +6,7 @@ import JurnalAdd from '../src/View/Jurnal/JurnalAdd';
 import JurnalEdit from './View/Jurnal/jurnalEdit';
 import AdminManage from './View/Admin/AdminManage';
 import AdminAdd from './View/Admin/AdminAdd';
+import AdminUpdate from './View/Admin/AdminUpdate';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route exact path="/jurnal-add" component={JurnalAdd} />
           <Route exact path="/jurnal-edit/:id" component={JurnalEdit} />
           <Route exact path="/admin" component={AdminManage} />
-          <Route exact path="/admin" component={AdminAdd} />
+          <Route exact path="/admin-add" component={AdminAdd} />
+          <Route exact path="/admin-edit/:id" component={AdminUpdate} />
 
         </Switch>
       </div>
