@@ -61,7 +61,7 @@ class JurnalAdd extends Component {
             }
         }
         return post(url, formData, config)
-    }
+    } 
     onSubmit(e) {
         e.preventDefault();
         this.fileUpload(this.state.file).then((response) => {
