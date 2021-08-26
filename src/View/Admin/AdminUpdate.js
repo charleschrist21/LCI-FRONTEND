@@ -64,6 +64,9 @@ class AdminUpdate extends Component {
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="/admin">Admin</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/">Logout</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
